@@ -1,0 +1,23 @@
+.settings__setting {
+  padding: 25px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.settings-list {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  right: 20px;
+}
+.settings__setting i {
+  opacity: 0.8;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.settings__setting-column:nth-child(2) {
+  opacity: 0.5;
+}

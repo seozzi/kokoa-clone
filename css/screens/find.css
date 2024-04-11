@@ -1,0 +1,128 @@
+
+.recommended-friends {
+    padding: 25px 0px;
+    border-bottom: var(--main-border);
+border-top: var(--main-border);
+margin : 25px 0px;
+
+}
+
+.recommended-friends__title {
+    font-size: 12px;
+    color: var(--surface-color);
+}
+
+.recommended-friends span {
+    margin: 100px 0px;
+    display: block;
+    text-align: center;
+    color: var(--surface-color);
+    font-size: 18px;
+}
+
+.open-chat__header {
+    display: flex;
+    justify-content: space-between;
+    color: var(--surface-color);
+    align-items: center;
+}
+
+.open-chat__header span i {
+    margin-left: 1px;
+}
+
+.open-post{
+    display:flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.open-post__title {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.open-post__hashtags {
+    text-transform: uppercase;
+    color: var(--surface-color);
+}
+
+.open-post__members {
+    display: flex;
+    align-items: center; 
+    margin-top : 5px;
+}
+
+.open-post__members img{
+width: 15px;
+height: 15px;
+border-radius: 50%;
+margin-right: 3px;
+}
+
+.open-post__member-count {
+    color: var(--surface-color);
+    font-size: 14px;
+}
+
+.open-post__members .divider{
+    width: 2px;
+    height: 10px;
+    background-color: var(--surface-color);
+    margin : 0 5px;
+}
+
+.open-post__member-status {
+    color: #ffb0e0;
+}
+
+.open-post__photo {
+    position: relative;
+}
+
+.open-post__photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+
+.open-post__heart-count {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 5px; right: 5px;
+
+}
+
+.open-post__heart-count span {
+    margin-left: 3px;
+}
+
+@keyframes heartBeat{
+    0% {
+      color: white;  
+      transform: none;
+    }
+    50% {
+        color: tomato;
+        transform:scale(1.5);
+    }
+    100% {
+        color: white;
+        transform: none;
+    }
+}
+
+.open-post__heart-count:hover i{ 
+    will-change: transform;
+    animation: heartBeat 1s linear infinite;
+}
+
+#navigation-bar__hidden-padding {
+    height: 100px;
+}
